@@ -267,3 +267,11 @@
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
+
+.active{
+    transform: scale(1);
+}
+
+.removeOverlay{
+    opacity: 1;
+}
