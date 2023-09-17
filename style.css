@@ -1,0 +1,139 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 100vw;
+    background-color: black;
+    height: 100vh;
+    position: relative;
+}
+
+.circle1{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background-image: linear-gradient(-25deg, #d84869, #f46641);
+    animation: anicircle1 14s ease infinite;
+}
+
+@keyframes anicircle1 {
+    50%{
+        left: 33%;
+        top: 4%;
+        scale: 1.11;
+    }
+}
+
+
+.circle2{
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: anicircle2 8s ease infinite;
+}
+
+@keyframes anicircle2 {
+    50%{
+        bottom: 6%;
+        right: 31%;
+        scale: 1.01;
+    }
+}
+
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    height: 450px;
+    border: 2px solid #ffffff30;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    background: #ffffff1a;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px 50px;
+}
+
+.profile-img img{
+    border: 2px solid #ffffff30;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    object-fit: cover;
+}
+
+.profile-img img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ffffff30;
+}
+
+.text h3{
+    text-align: center;
+    color: #ffffff85;
+}
+
+.main-heading h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.button-group{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.share{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.follow{
+    align-items: center;
+    gap: 7px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+}
+
+.share:hover{
+    background: #ffffffb9;
+    color: #131313;
+}
+
+.follow:hover{
+    background: #ffffffb9;
+    color: #131313;
+}
