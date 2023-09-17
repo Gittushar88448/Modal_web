@@ -6,7 +6,7 @@ const openModal = () =>{
     getValueOverlay.classList.add("removeOverlay");
 };
 
-const closeModel = () =>{
+const closeModal = () =>{
     getValue.classList.remove("active");
     getValueOverlay.classList.remove("removeOverlay");
 };
